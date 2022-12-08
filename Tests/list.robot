@@ -1,8 +1,8 @@
 *** Settings ***
-
+Resource        ../Resources/scope.robot
 *** Variables ***
 # notice we use @ symbol when assigning values here... but below we use $ when accessing it!
-@{MY_VARIABLE} =    Hello there     This is value 2     I am item 3
+@{MY_VARIABLE} =    ScriptFile  ScriptFile  ScriptFile
 
 *** Test Cases ***
 Variable demonstration
